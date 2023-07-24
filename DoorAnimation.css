@@ -1,0 +1,61 @@
+.door-animation {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .door {
+    background-color: #031b39;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transition: transform 1s ease;
+  }
+  
+  .left-door {
+    left: 0;
+    transform-origin: left;
+  }
+  
+  .right-door {
+    right: 0;
+    transform-origin: right;
+  }
+  
+  .doors-open .left-door {
+    transform: translateX(-100%);
+  }
+  
+  .doors-open .right-door {
+    transform: translateX(100%);
+  }
+  
+  .left-door-open {
+    transform: translateX(0%);
+  }
+  
+  .right-door-open {
+    transform: translateX(0%);
+  }
+  
+  .fashionable-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 3s 2s forwards;
+  }
+  
+  
+  
